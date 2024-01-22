@@ -31,5 +31,41 @@
           loop:true,
         });
       </script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script>
+        gsap.from(".container > h1", 1.4, {
+            opacity: 0,
+            x: -100,
+            ease: "power3.inOut",
+            stagger: 0.3,
+            delay: 0.2,
+        });
+
+        gsap.from(".container > p", 1.4, {
+            opacity: 0,
+            x: -100,
+            ease: "power3.inOut",
+            stagger: 0.3,
+            delay: 0.3,
+        });
+
+
+        gsap.from(".box > .img2", 1.4, {
+            opacity: 0,
+            y: 100,
+            ease: "power3.inOut",
+            stagger: 0.2,
+            delay: 0.4,
+        });
+
+        gsap.from(".box > .img1", 1.4, {
+            opacity: 0,
+            ease: "power3.inOut",
+            stagger: 0.2,
+            delay: 0.2,
+        });
+    </script>
 </body>
 </html>
